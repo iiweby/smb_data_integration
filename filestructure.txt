@@ -1,0 +1,20 @@
+|-- .gitignore
+|-- README.md
+|-- backend
+|-- frontend
+    |-- package-lock.json
+    |-- package.json
+    |-- postcss.config.js
+    |-- public
+        |-- index.html
+    |-- src
+        |-- App.js
+        |-- components
+            |-- Dashboard.js
+            |-- RequestTable.js
+            |-- SubmitRequest.js
+        |-- index.css
+        |-- index.js
+    |-- tailwind.config.js
+|-- package-lock.json
+|-- package.json
