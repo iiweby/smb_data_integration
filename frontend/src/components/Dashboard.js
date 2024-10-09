@@ -8,7 +8,7 @@ const Dashboard = () => {
       {
         id: 1,
         name: "John Doe",
-        organizationName: "Example Org",
+        orgName: "Example Org",
         description: "Broken link on the page",
       },
       {
@@ -36,7 +36,7 @@ const Dashboard = () => {
           {requests.map((request) => (
             <tr key={request.id}>
               <td>{request.name}</td>
-              <td>{request.organizationName}</td>
+              <td>{request.orgName}</td>
               <td>{request.description}</td>
             </tr>
           ))}
