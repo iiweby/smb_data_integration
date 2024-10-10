@@ -4,6 +4,8 @@
     |-- controllers
         |-- requestController.js
     |-- models
+    |-- server
+        |-- db.js
 |-- frontend
     |-- package-lock.json
     |-- package.json
