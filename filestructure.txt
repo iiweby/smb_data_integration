@@ -1,10 +1,21 @@
 |-- .gitignore
 |-- README.md
 |-- backend
+    |-- .env
+    |-- .gitignore
     |-- controllers
-        |-- requestController.js
+        |-- submitFormController.js
+    |-- database
+        |-- db.js
     |-- models
+        |-- submitForm.js
+    |-- package-lock.json
+    |-- package.json
+    |-- routes
+        |-- submitFormRoute.js
+    |-- server.js
 |-- frontend
+    |-- .gitignore
     |-- package-lock.json
     |-- package.json
     |-- postcss.config.js
