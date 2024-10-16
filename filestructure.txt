@@ -3,14 +3,6 @@
 |-- backend
     |-- .env
     |-- controllers
-        |-- submitFormController.js
-    |-- models
-        |-- submitForm.js
-    |-- package-lock.json
-    |-- package.json
-    |-- routes
-        |-- submitFormRoute.js
-    |-- server.js
 |-- frontend
     |-- package-lock.json
     |-- package.json
