@@ -4,10 +4,16 @@
     |-- .env
     |-- .gitignore
     |-- controllers
-        |-- requestController.js
+        |-- submitFormController.js
     |-- models
+        |-- submitForm.js
+    |-- package-lock.json
+    |-- package.json
+    |-- routes
+        |-- submitFormRoute.js
     |-- server
         |-- db.js
+    |-- server.js
 |-- frontend
     |-- .gitignore
     |-- package-lock.json
