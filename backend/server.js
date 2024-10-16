@@ -2,25 +2,23 @@
 
 const express = require('express');
 const morgan = require('morgan');
-const routes = require('./routes'); // Assuming you have a routes folder for your routes
+const routes = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware
-app.use(express.json()); // To parse incoming JSON requests
-app.use(morgan('dev'));  // Logging middleware
+// middleware
+app.use(express.json()); // parse incoming JSON requests
+app.use(morgan('dev'));  // logging middleware with morgan
 
-// Routes
-app.use('/api', routes);  // Assuming routes are under '/api'
 
-// Error Handling Middleware
+// temp error handler middleware, will develop later in errorHandler.js
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ message: 'Internal Server Error' });
 });
 
-// Start Server
+// server start
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
