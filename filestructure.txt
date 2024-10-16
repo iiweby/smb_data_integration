@@ -1,12 +1,15 @@
 |-- .gitignore
 |-- README.md
 |-- backend
+    |-- .env
+    |-- .gitignore
     |-- controllers
         |-- requestController.js
     |-- models
     |-- server
         |-- db.js
 |-- frontend
+    |-- .gitignore
     |-- package-lock.json
     |-- package.json
     |-- postcss.config.js

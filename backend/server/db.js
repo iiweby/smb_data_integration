@@ -1,17 +1,15 @@
+require("dotenv").config();
+
 const mongoose = require("mongoose");
+const mongoURI = process.env.MONGO_URI;
 
-// Replace with your MongoDB connection string
-const mongoURI = "mongodb://localhost:27017/yourDatabaseName";
-
-// Connect to MongoDB
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// Connection event
 mongoose.connection.on("connected", () => {
-  console.log("Mongoose connected to " + mongoURI);
+  console.log("Mongoose connected to the database.");
 });
 
 mongoose.connection.on("error", (err) => {
@@ -22,5 +20,4 @@ mongoose.connection.on("disconnected", () => {
   console.log("Mongoose disconnected");
 });
 
-// Export the mongoose connection
 module.exports = mongoose;
