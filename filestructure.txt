@@ -1,8 +1,8 @@
 |-- .gitignore
 |-- README.md
 |-- backend
+    |-- .env
     |-- controllers
-        |-- requestController.js
 |-- frontend
     |-- package-lock.json
     |-- package.json
