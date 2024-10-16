@@ -5,14 +5,14 @@
     |-- .gitignore
     |-- controllers
         |-- submitFormController.js
+    |-- database
+        |-- db.js
     |-- models
         |-- submitForm.js
     |-- package-lock.json
     |-- package.json
     |-- routes
         |-- submitFormRoute.js
-    |-- server
-        |-- db.js
     |-- server.js
 |-- frontend
     |-- .gitignore

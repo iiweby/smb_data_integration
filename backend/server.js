@@ -1,29 +1,22 @@
 const express = require("express");
-const morgan = require("morgan");
-const submitFormRoutes = require("./routes/submitFormRoute");
+const connectDB = require("./database/db");
+const colors = require("colors");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+
+// Connect to the database
+connectDB();
 
 // Middleware
-app.use(express.json());
-app.use(morgan("dev"));
+app.use(express.json()); // To parse JSON bodies
 
-// Define a route for the root path
+// Define routes
 app.get("/", (req, res) => {
-    res.send("Hey Luke! Great work, this message is just a test");
+  res.send("API is running...");
 });
 
-// Register routes
-app.use("/api/forms", submitFormRoutes);
-
-// Error handler middleware
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({ message: "Internal Server Error" });
-});
-
-// Server start
+// Start the server
+const PORT = process.env.PORT || 5002;
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`.cyan.underline);
 });
