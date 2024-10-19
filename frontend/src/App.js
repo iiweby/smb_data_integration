@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="bg-background min-h-screen flex flex-col justify-between">
-        <Header />
+        <Header/>
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<SubmitRequest />} />

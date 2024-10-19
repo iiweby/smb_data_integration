@@ -10,6 +10,7 @@ const SubmitRequest = () => {
   });
 
   return (
+    <div className="p-5">
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-4">Submit a Request</h1>
       <Formik
@@ -88,6 +89,7 @@ const SubmitRequest = () => {
           </Form>
         )}
       </Formik>
+    </div>
     </div>
   );
 };
