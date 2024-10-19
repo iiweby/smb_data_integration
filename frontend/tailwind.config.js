@@ -7,10 +7,7 @@ export const theme = {
       background: "#F4F4F4",
       accent: "#E6D66C",
       highlight: "#FFA300",
-
-
     },
   },
-
 };
 export const plugins = [];
