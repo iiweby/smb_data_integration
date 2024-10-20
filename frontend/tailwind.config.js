@@ -1,6 +1,9 @@
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   extend: {
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+    },
     colors: {
       primary: "#0076A8",
       secondary: "#00A4E4",
