@@ -1,9 +1,13 @@
 const express = require("express");
-const morgan = require('morgan');
-const routes = require('./routes');
+const morgan = require("morgan");
 
 const app = express();
+
+const submitFormRoute = require('./routes/submitFormRoute');
+
 const PORT = process.env.PORT || 3001;
+
+app.use('/api/forms', submitFormRoute); // Use route for form API
 
 // middleware
 app.use(express.json()); // parse incoming JSON requests

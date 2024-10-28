@@ -4,11 +4,14 @@ const {
 //  createForm, <-- not sure if this is needed
     getForms,
     getForm,
+    submitRequest,
     updateForm,
     deleteForm
 } = require("../controllers/submitFormController");
 
 router.route("/").get(getForms); //read all forms
+
+router.route("/submit-request").post(submitRequest); // handle form submissions
 
 // router.route("/").post(createForm); <-- form generation?
 
