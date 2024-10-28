@@ -5,7 +5,8 @@ const {
     getForms,
     getForm,
     updateForm,
-    deleteForm
+    deleteForm,
+    submitRequest
 } = require("../controllers/submitFormController");
 
 // Route definitions
@@ -18,4 +19,7 @@ router.route("/:id")
     .put(updateForm)  // Update specific form by ID
     .delete(deleteForm);  // Delete specific form by ID
 
+router.route("/submit-request")
+    .post(submitRequest); // Handle form submissions
+    
 module.exports = router;
