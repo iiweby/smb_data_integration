@@ -10,7 +10,13 @@ const Header = () => {
   return (
     <header className="bg-primary text-white sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
-        <h1 className="text-2xl font-bold font-montserrat">SMB LOGO HERE</h1>
+         <img src="/smblogo.png" alt="SMB Logo"  style={{
+            backgroundColor: 'white',
+            borderRadius: ' 8px',
+            padding: '8px',
+            width: '180px',        
+            height: 'auto',           
+          }} ></img>
 
         {/* Regular Navigation Links */}
         <nav className="hidden md:block">
