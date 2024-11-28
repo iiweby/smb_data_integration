@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SubmitRequest from "./components/SubmitRequest";
 import Dashboard from "./components/Dashboard";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<SubmitRequest />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/contactUs" element={<ContactUs />} />
           </Routes>
         </main>
         <Footer />

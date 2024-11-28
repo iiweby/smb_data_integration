@@ -3,7 +3,7 @@ import react from 'react';
 // Updated menu options
 const menuOptions = [
   { name: 'Tickets Dashboard', href: '/' },
-  { name: 'Contact Us', href: '/' },
+  { name: 'Contact Us', href: '/contactUs' },
 ];
 
 const Header = () => {
